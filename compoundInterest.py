@@ -1,3 +1,4 @@
+import math
 def calculateCompoundInterest():
     
 # This first 3 lines are provided for yougetACompoundIntrest()
@@ -10,11 +11,12 @@ def calculateCompoundInterest():
 
         amount = principal*(1 + (rate / 100))**time
         compoundInterest = amount - principal
+        compoundInterestRounded = math.ceil(compoundInterest * 100) / 100
 
         print(f"Principal amount: {principal}")
         print(f"Time:             {time}")
         print(f"Rate:             {rate}")
-        print(f"Compound Interst: {compoundInterest}")
+        print(f"Compound Interst: {compoundInterestRounded}")
         print("---")
     try:
         CompoundInterest()
