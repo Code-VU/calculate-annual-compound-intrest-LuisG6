@@ -16,7 +16,7 @@ def calculateCompoundInterest():
         print(f"Principal amount: {principal}")
         print(f"Time:             {time}")
         print(f"Rate:             {rate}")
-        print(f"Compound Interst: {compoundInterestRounded}")
+        print(f"Compound Interest: {compoundInterestRounded}")
         print("---")
     try:
         CompoundInterest()
